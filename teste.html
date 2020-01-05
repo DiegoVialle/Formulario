@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col-md-8">
+                <fieldset>
+                    <legend>Peça seu orçamento agora mesmo</legend>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nome"></label>
+                            <input type="text" required class="form-control" id="nome" name="nome" placeholder="Nome">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email"></label>
+                            <input type="email" required class="form-control" id="email" name="email"
+                                placeholder="E-mail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="telefone"></label>
+                            <input type="text" required class="form-control" id="telefone" name="cpf"
+                                placeholder="Telefone">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="serviço"></label>
+                            <select required class="custom-select" id="serviço">
+                                <option value="" disabled selected>Escolha o serviço que deseja</option>
+                                <option value="criação_logo">Criação de Logo</option>
+                                <option value="site">Site</option>
+                                <option value="app_mobile">APP Mobile</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="mensagem"></label>
+                            <textarea type="text" required class="form-control" name="mensagem" rows="4"
+                                placeholder="Mensagem"></textarea>
+                        </div>
+                    </div>
+                        <button type="submit" class="btn btn-lg btn-primary mb-3 float-right">
+                            <span class="oi oi-thumb-up"></span>
+                            Enviar
+                        </button>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
